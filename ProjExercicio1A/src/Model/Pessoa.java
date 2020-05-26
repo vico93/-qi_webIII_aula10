@@ -19,18 +19,19 @@ public class Pessoa {
     }
 
     // Métodos
-    public double calcularPesoIdeal(){
-        if(this.sexo==1){ //Feminino
+    public double calcularPesoIdeal() {
+        if(this.sexo == 1) { //Feminino
             return (62.1 * this.altura) - 44.7;
-        }else if(this.sexo==2){
+        }
+        else if(this.sexo == 2) {
             return (72.7 * this.altura) - 58;
-        }else{
+        }
+        else {
             return 0;
         }
     }
 
     // toString
-
     @Override
     public String toString() {
         return "Altura: " + altura +
